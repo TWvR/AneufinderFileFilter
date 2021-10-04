@@ -5,8 +5,8 @@ AneufinderFileFilter contains R scripts that allows for easy filtering of single
 ## Scripts
 
 To use the code you need two included scripts:
-1. __Run_AneufinderFileFilter script:__ choose correct settings for filtering and possible output.
-1. __Func_AneufinderFileFilter script:__ contains the function that is used to filter the data
+1. __RUN_AneufinderFileFilter script:__ choose correct settings for filtering and possible output.
+1. __FUNC_AneufinderFileFilter script:__ contains the function that is used to filter the data
 
 ## Required R packages
 
@@ -19,9 +19,9 @@ This script makes use of the following R packages:
 
 To get started I would advise users to make use of R studio and create a new project in R and name it 'AneufinderFileFilter'. Then download both scripts from GitHub and place these within the project folder of your new AneufinderFileFilter project.
 
-In general there's no need to open and/or adjust the function script, this is only needed if you like to make adjustments to the code that performs the actual filtering  or the code by which the different plots are generated.
+In general there's no need to open and/or adjust the function script, this is only needed if you like to make adjustments to the code that performs the actual filtering  or the code by which the different plots are generated. You only need to make sure that the RUN script contains the correct source-path to the FUNC script.
 
-The 'Run_AneufinderFileFilter'-script is subdivided in multiple sections to create a good overview of the different settings. Prior to each run you probably like to give your project a new name, assign the correct input folder and check the current settings.
+The 'Run_AneufinderFileFilter'-script is subdivided in multiple sections to create a good overview of the different settings. Prior to each run you probably like to give your project a new name, assign the correct input folder and check the filtering and plotting settings.
 
 After initation of the script using __AneufinderFileFilter(sampleIDs)__ you will be prompted to check filter settings. If correct, please enter 'Y' to initialize the filtering. 
 
