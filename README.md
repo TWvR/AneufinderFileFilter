@@ -10,15 +10,42 @@ To use the code you need two included scripts:
 
 ## Required R packages
 
-This script makes use of the Aneufinder and colorspace R packages. So if you haven't installed them yet, please search for these in bioconductor and follow instructions to 
+This script makes use of the following R packages:
+
+1. __[Aneufinder](https://bioconductor.org/packages/release/bioc/html/AneuFinder.html)__
+1. __[Colorspace](https://colorspace.r-forge.r-project.org/articles/colorspace.html)__
 
 ## Instructions for use
 
 To get started I would advise users to make use of R studio and create a new project in R and name it 'AneufinderFileFilter'. Then download both scripts from GitHub and place these within the project folder of your new AneufinderFileFilter project.
 
-In general there's no need to open and/or adjust the function script, this only needed if you like to make adjustments to the code that performs the actual filtering  or the code by which the different plots are generated.
+In general there's no need to open and/or adjust the function script, this is only needed if you like to make adjustments to the code that performs the actual filtering  or the code by which the different plots are generated.
 
-The 'Run_AneufinderFileFilter'-script is subdivided in multiple sections to create a good overview of the different settings. First you like to give your project a name and set the model-type to match the previously used settings in Anuefinder (edivisive/dnaCopy/hmm).
+The 'Run_AneufinderFileFilter'-script is subdivided in multiple sections to create a good overview of the different settings. Prior to each run you probably like to give your project a new name, assign the correct input folder and check the current settings.
+
+After initation of the script using __AneufinderFileFilter(sampleIDs)__ you will be prompted to check filter settings. If correct, please enter 'Y' to initialize the filtering. 
+
+## Options
+
+__Available filtering options__
+
+1. Filter Aneufinder model files generated via edivisive, dnaCopy or hmm.
+1. Filter files based on total read count per cell, number of chromosome segements, spikiness and/or bhattacharyya distance.
+1. Exclude files with too high weighted average copy number
+2. Exclude files with perfect diploid copy number
+
+__Obtain selected Aneufinder model files__
+
+1. Copy selected model files to new folder
+2. Copy model files from perfect diploid cells to new folder
+
+__Plots__
+
+1. PDF with summary statistics for included and excluded files
+2. PDF with genomewide profile for selected files
+3. PDF with single cell karyotype profiles for included or excluded files
+4. PDF with heterogeneity profiles for selected files
+5. CSV file with measurement statistics for each file
 
 
 
