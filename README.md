@@ -26,7 +26,7 @@ In general there's no need to open and/or adjust the function script, this is on
 
 The 'Run_AneufinderFileFilter'-script is subdivided in multiple sections to create a good overview of the different settings. Prior to each run you probably like to give your project a new name, assign the correct input folder and check the filtering and plotting settings.
 
-After initation of the script using __AneufinderFileFilter(sampleIDs)__ you will be prompted to check filter settings. If correct, please enter 'Y' to initialize the filtering. 
+After making all required adjustments, run the code line-by-line. The actual filtering is commenced at the end of the run script by running  __AneufinderFileFilter(sampleIDs)__. Soon thereafter you will be prompted to quickly check filter settings; if correct, please enter 'Y' to initialize the filtering. 
 
 ## Options
 
