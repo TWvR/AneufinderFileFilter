@@ -18,6 +18,28 @@ This script makes use of the following R packages:
 1. __[Aneufinder](https://bioconductor.org/packages/release/bioc/html/AneuFinder.html)__
 1. __[Colorspace](https://colorspace.r-forge.r-project.org/articles/colorspace.html)__
 
+## Input / Output
+
+__Input:__  
+* Aneufinder Model files  
+
+__Output:__
+
+For each sample:
+* .txt summary of used filter parameters
+* directory with selected model files
+* directory with excluded model files
+* directory with perfect diploid model files
+* .pdf genomewide karyotype plot based on selected/excluded files
+* .pdf single karyotype plots based on selected/excluded files
+* .pdf heterogeneity/aneuploidy plot based on selected/excluded files
+* .csv with QC measurements for each file
+* .csv with karyotype measurements for each chromosome
+* .csv with karyotype measurements for whole genome
+
+_many of the above are optional_
+
+
 ## Instructions for use
 
 To get started I would advise users to make use of R studio and create a new project in R and name it 'AneufinderFileFilter'. Then download both scripts from GitHub and place these within the project folder of your new AneufinderFileFilter project.
@@ -26,7 +48,7 @@ In general there's no need to open and/or adjust the function script, this is on
 
 The 'Run_AneufinderFileFilter'-script is subdivided in multiple sections to create a good overview of the different settings. Prior to each run you probably like to give your project a new name, assign the correct input folder and check the filtering and plotting settings.
 
-After making all required adjustments, run the code line-by-line. The actual filtering is commenced at the end of the run script by running  __AneufinderFileFilter(sampleIDs)__. Soon thereafter you will be prompted to quickly check filter settings; if correct, please enter 'Y' to initialize the filtering. 
+After making all required adjustments, run the code line-by-line. The actual filtering is commenced at the end of the run script by running  __AneufinderFileFilter(sampleIDs)__. Soon thereafter you will be prompted to quickly check filter settings; if correct, please enter 'Y' to continue the script. 
 
 ## Options
 
@@ -50,7 +72,7 @@ __Plots__
 4. PDF with heterogeneity profiles for selected model files
 5. CSV file with measurement statistics for each model file
 
-## Last comments
+## Final comments
 
 This script was built while being a novice in R programming. Hence, the actual code could have been propably much more efficient. Nevertheless I hope it can be used to your benefit.
 If you have any questions or need help with running the script, please don't hesitate to send me a message.
