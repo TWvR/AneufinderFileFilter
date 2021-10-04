@@ -6,7 +6,7 @@ AneufinderFileFilter contains R scripts that allows for easy filtering of single
 
 To use the code you need two included scripts:
 1. __Run_AneufinderFileFilter script:__ choose correct settings for filtering and possible output.
-1. __The AneufinderFileFilter_Func script:__ contains the function that is used to filter the data
+1. __Func_AneufinderFileFilter script:__ contains the function that is used to filter the data
 
 ## Required R packages
 
