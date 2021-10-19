@@ -8,7 +8,7 @@ To use the code you need two included scripts:
 1. __RUN_AneufinderFileFilter script__  
 _Set input/output folders and choose correct settings_  
 
-2. __FUNC_AneufinderFileFilter script__ 
+2. __FUNC_AneufinderFileFilter script__   
 _Contains the code that is used to filter the data_
 
 ## Required R packages
