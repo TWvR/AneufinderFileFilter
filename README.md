@@ -74,7 +74,7 @@ __Plots__
 
 ## Final comments
 
-This script was built while being a novice in R programming. Hence, the actual code could have been propably much more efficient. Nevertheless I hope it can be used to your benefit.
+This script was one of my first builds, hence the coding could probably have been more efficient. Nevertheless I hope it can be used to your benefit.
 If you have any questions or need help with running the script, please don't hesitate to send me a message.
 
 Thomas van Ravesteyn
